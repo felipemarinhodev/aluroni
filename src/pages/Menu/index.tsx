@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ReactComponent as Logo } from 'assets/logo.svg';
 import styles from './Menu.module.scss';
 import SearchEngine from './SearchEngine';
+import Filters from './Filters';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -17,6 +18,9 @@ export default function Menu() {
       <section className={styles.cardapio}>
         <h3 className={styles.cardapio__titulo}>Menu</h3>
         <SearchEngine search={search} setSearch={setSearch} />
+        <div className={styles.cardapio__filtros}>
+          <Filters />
+        </div>
       </section>
     </main>
   );
