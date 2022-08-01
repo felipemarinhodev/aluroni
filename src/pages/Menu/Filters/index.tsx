@@ -3,7 +3,12 @@ import styles from './Filters.module.scss';
 
 type IOption = typeof filters[0];
 
-export default function Filters() {
+interface Props {
+  filter: number | null;
+  setFilter: React.Dispatch<React.SetStateAction<number | null>>;
+}
+
+export default function Filters({ filter, setFilter }: Props) {
   function selectFilter(option: IOption): void {
     throw new Error('Function not implemented.');
   }
