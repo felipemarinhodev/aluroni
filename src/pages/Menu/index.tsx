@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from 'assets/logo.svg';
 import styles from './Menu.module.scss';
 import SearchEngine from './SearchEngine';
 import Filters from './Filters';
+import Sort from './Sort';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -21,6 +22,7 @@ export default function Menu() {
         <SearchEngine search={search} setSearch={setSearch} />
         <div className={styles.cardapio__filtros}>
           <Filters filter={filter} setFilter={setFilter} />
+          <Sort />
         </div>
       </section>
     </main>
