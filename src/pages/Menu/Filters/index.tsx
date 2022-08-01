@@ -1,6 +1,7 @@
 import React from 'react';
 import filters from './filters.json';
 import styles from './Filters.module.scss';
+import classNames from 'classnames';
 
 type IOption = typeof filters[0];
 
@@ -20,9 +21,10 @@ export default function Filters({ filter, setFilter }: Props) {
     <div className={styles.filtros}>
       {filters.map((option: IOption) => (
         <button
-          className={`${styles.filtros__filtro} ${
-            filter === option.id ? styles['filtros__filtro--ativo'] : ''
-          }`}
+          className={classNames({
+            [styles.filtros__filtro]: true,
+            [styles['filtros__filtro--ativo']]: filter === option.id,
+          })}
           key={option.id}
           onClick={() => selectFilter(option)}
         >
