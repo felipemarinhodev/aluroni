@@ -4,6 +4,7 @@ import styles from './Menu.module.scss';
 import SearchEngine from './SearchEngine';
 import Filters from './Filters';
 import Sort from './Sort';
+import Items from './Items';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -25,6 +26,7 @@ export default function Menu() {
           <Filters filter={filter} setFilter={setFilter} />
           <Sort sort={sort} setSort={setSort} />
         </div>
+        <Items />
       </section>
     </main>
   );
