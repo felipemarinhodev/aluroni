@@ -1,6 +1,7 @@
 import logo from 'assets/logo.svg';
 import styles from './Item.module.scss';
 import menu from '../items.json';
+import classNames from 'classnames';
 
 type Props = typeof menu[0];
 
@@ -17,7 +18,14 @@ export default function Item(props: Props) {
           <p>{description}</p>
         </div>
         <div className={styles.item__tags}>
-          <div className={styles.item__type}>{category.label}</div>
+          <div
+            className={classNames({
+              [styles.item__type]: true,
+              [styles[`item__type__${category.type}`]]: true,
+            })}
+          >
+            {category.label}
+          </div>
           <div className={styles.item__portion}>{size}g</div>
           <div className={styles.item__amountPeople}>
             Serve {serving} pessoa{serving === 1 ? '' : 's'}

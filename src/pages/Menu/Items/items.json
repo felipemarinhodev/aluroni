@@ -9,7 +9,8 @@
 		"id": 1,
 		"category": {
 			"id": 1,
-			"label": "Massas"
+			"label": "Massas",
+			"type": "pastas"
 		}
 	},
 	{
@@ -22,7 +23,8 @@
 		"id": 2,
 		"category": {
 			"id": 1,
-			"label": "Massas"
+			"label": "Massas",
+			"type": "pastas"
 		}
 	},
 	{
@@ -35,7 +37,8 @@
 		"id": 3,
 		"category": {
 			"id": 1,
-			"label": "Massas"
+			"label": "Massas",
+			"type": "pastas"
 		}
 	},
 	{
@@ -48,7 +51,8 @@
 		"id": 4,
 		"category": {
 			"id": 2,
-			"label": "Carnes"
+			"label": "Carnes",
+			"type": "meats"
 		}
 	},
 	{
@@ -61,7 +65,8 @@
 		"id": 5,
 		"category": {
 			"id": 2,
-			"label": "Carnes"
+			"label": "Carnes",
+			"type": "meats"
 		}
 	},
 	{
@@ -74,7 +79,8 @@
 		"id": 6,
 		"category": {
 			"id": 3,
-			"label": "Combos"
+			"label": "Combos",
+			"type": "combos"
 		}
 	},
 	{
@@ -87,7 +93,8 @@
 		"id": 7,
 		"category": {
 			"id": 4,
-			"label": "Veganos"
+			"label": "Veganos",
+			"type": "vegans"
 		}
 	},
 	{
@@ -100,7 +107,8 @@
 		"id": 8,
 		"category": {
 			"id": 4,
-			"label": "Veganos"
+			"label": "Veganos",
+			"type": "vegans"
 		}
 	},
 	{
@@ -113,7 +121,8 @@
 		"id": 9,
 		"category": {
 			"id": 3,
-			"label": "Combos"
+			"label": "Combos",
+			"type": "combos"
 		}
 	}
 ]
