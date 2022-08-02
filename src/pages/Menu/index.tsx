@@ -8,6 +8,7 @@ import Sort from './Sort';
 export default function Menu() {
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<number | null>(null);
+  const [sort, setSort] = useState('');
   return (
     <main>
       <nav className={styles.menu}>
@@ -22,7 +23,7 @@ export default function Menu() {
         <SearchEngine search={search} setSearch={setSearch} />
         <div className={styles.cardapio__filtros}>
           <Filters filter={filter} setFilter={setFilter} />
-          <Sort />
+          <Sort sort={sort} setSort={setSort} />
         </div>
       </section>
     </main>
